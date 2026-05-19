@@ -4,131 +4,282 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hacienda & Eventos Espinal</title>
-  <meta name="description" content="Hacienda & Eventos Espinal: villas, piscina, BBQ, gazebo, salón de eventos y espacios premium para celebrar y descansar." />
+  <meta name="description" content="Hacienda & Eventos Espinal: villa, eventos, hospedaje, piscina, salón, BBQ, bar y experiencias privadas en un ambiente tropical premium." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="navbar" id="navbar">
-    <a href="#inicio" class="brand">
-      <img src="assets/logo-hacienda-espinal-final.png" alt="Logo Hacienda & Eventos Espinal">
-      <span>Hacienda & Eventos Espinal</span>
-    </a>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
-    <nav class="nav-links" id="navLinks">
+  <header class="nav" id="nav">
+    <a href="#inicio" class="brand"><img src="assets/logo-hacienda-espinal.jpg" alt="Logo Hacienda & Eventos Espinal"><span>Hacienda & Eventos Espinal</span></a>
+    <button class="menu" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="navLinks">
       <a href="#experiencia">Experiencia</a>
       <a href="#amenidades">Amenidades</a>
       <a href="#eventos">Eventos</a>
       <a href="#galeria">Galería</a>
-      <a href="#reservar" class="nav-cta">Reservar</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto" class="nav-btn">Reservar</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <img src="assets/aerea-premium.jpeg" alt="Vista aérea de Hacienda & Eventos Espinal" class="hero-img">
+      <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Villa • Eventos • Celebraciones • Descanso</p>
-        <h1>Un espacio tropical para celebrar, descansar y disfrutar.</h1>
-        <p>Hacienda & Eventos Espinal reúne villas, piscina, gazebo, BBQ, bar, billar y áreas sociales en un ambiente privado y elegante.</p>
+      <div class="hero-inner reveal">
+        <img class="hero-logo" src="assets/logo-hacienda-espinal.jpg" alt="Logo Hacienda & Eventos Espinal">
+        <p class="eyebrow">Villa • Eventos • Celebraciones • Villas</p>
+        <h1>Hacienda & Eventos Espinal</h1>
+        <p class="hero-subtitle">Elegancia, naturaleza y experiencias inolvidables.</p>
         <div class="hero-actions">
-          <a href="#reservar" class="btn primary">Reservar experiencia</a>
+          <a href="#contacto" class="btn primary">Reservar experiencia</a>
           <a href="#galeria" class="btn secondary">Explorar galería</a>
         </div>
       </div>
-    </section>
-
-    <section class="intro" id="experiencia">
-      <div>
-        <p class="section-label">Experiencia Hacienda</p>
-        <h2>Arquitectura en madera, naturaleza y áreas para cada ocasión.</h2>
+      <div class="floating-card reveal">
+        <span>📍 Canca La Reina</span>
+        <strong>Un espacio tropical para celebrar, descansar y disfrutar.</strong>
       </div>
-      <p>Un complejo privado pensado para estadías, pasadías, celebraciones familiares, actividades empresariales y momentos especiales.</p>
     </section>
 
-    <section class="feature-grid">
-      <article class="feature-card big">
-        <img src="assets/villa-frontal.jpeg" alt="Villa principal de madera">
-        <div>
-          <span>🏡 Villa principal</span>
-          <h3>Estilo tropical con acabados en madera</h3>
-          <p>Una villa acogedora con espacios amplios, terraza, balcón y detalles cálidos para descansar con comodidad.</p>
+    <section class="quick-strip">
+      <div><strong>Eventos</strong><span>Bodas, cumpleaños y celebraciones privadas</span></div>
+      <div><strong>Villa</strong><span>Hospedaje, pasadías y experiencias exclusivas</span></div>
+      <div><strong>Amenidades</strong><span>Piscina, BBQ, bar, billar y salón</span></div>
+    </section>
+
+    <section class="section intro" id="experiencia">
+      <div class="intro-copy reveal">
+        <p class="eyebrow">Experiencia Hacienda</p>
+        <h2>Un complejo privado con estética tropical y áreas para cada ocasión.</h2>
+        <p>Hacienda & Eventos Espinal reúne piscina, cabañas, área BBQ, cocina exterior, salón de eventos, bar, billar y espacios abiertos en una propuesta pensada para celebraciones, descanso y momentos especiales.</p>
+      </div>
+      <div class="intro-grid reveal">
+        <img src="assets/experiencia-resort.jpg" alt="Piscina y palmeras">
+        <img src="assets/hero-noche.jpg" alt="Vista nocturna">
+      </div>
+    </section>
+
+    <section class="split feature-dark" id="eventos">
+      <div class="split-image reveal" style="background-image:url('assets/salon-reflejos.jpg')"></div>
+      <div class="split-content reveal">
+        <p class="eyebrow">Eventos & celebraciones</p>
+        <h2>Salón, bar y espacios diseñados para momentos inolvidables.</h2>
+        <p>Un entorno amplio y elegante, ideal para actividades sociales, privadas y empresariales con una vibra tropical premium.</p>
+        <a href="#contacto" class="btn primary">Solicitar información</a>
+      </div>
+    </section>
+
+    <section class="section cards-section" id="amenidades">
+      <div class="section-head reveal">
+        <p class="eyebrow">Amenidades</p>
+        <h2>Áreas diseñadas para disfrutar</h2>
+        <p>Espacios amplios, funcionales y visualmente memorables para eventos y estadías.</p>
+      </div>
+      <div class="feature-cards">
+        <article class="feature-card reveal">
+          <img src="assets/bbq-gazebo.jpg" alt="Área BBQ">
+          <div><span>🍖 BBQ & Gazebo</span><h3>Área social premium</h3><p>Un espacio cálido con madera, horno, mecedoras y ambiente perfecto para compartir.</p></div>
+        </article>
+        <article class="feature-card reveal">
+          <img src="assets/cocina-isla.jpg" alt="Cocina exterior">
+          <div><span>🍽 Cocina exterior</span><h3>Diseñada para reuniones</h3><p>Isla, barra, nevera y una estética moderna/rústica que eleva cualquier evento.</p></div>
+        </article>
+        <article class="feature-card reveal">
+          <img src="assets/billar.jpg" alt="Mesa de billar">
+          <div><span>🎱 Entretenimiento</span><h3>Billar y lounge</h3><p>Área de juego y descanso con diseño tropical y conexión visual con la piscina.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section event-section">
+      <div class="event-copy reveal">
+        <p class="eyebrow">Eventos</p>
+        <h2>Salón, pista y bar para celebraciones privadas.</h2>
+        <p>El salón principal combina techo alto de madera, piso brillante, bar y pista para celebraciones. Ideal para actividades sociales, empresariales y privadas.</p>
+      </div>
+      <div class="event-gallery">
+        <img class="reveal wide" src="assets/salon-reflejos.jpg" alt="Salón principal">
+        <img class="reveal" src="assets/pista-eventos.jpg" alt="Pista de eventos">
+        <img class="reveal" src="assets/bar-led.jpg" alt="Bar Hacienda Espinal">
+      </div>
+    </section>
+
+    <section class="section cabins">
+      <div class="section-head reveal">
+        <p class="eyebrow">Alojamiento</p>
+        <h2>Cabañas, vistas y ambiente de descanso</h2>
+      </div>
+      <div class="cabins-layout">
+        <img class="reveal main-cabin" src="assets/cabana-frente.jpg" alt="Cabaña principal">
+        <div class="cabin-side">
+          <img class="reveal" src="assets/cabana-balcon.jpg" alt="Balcón con vista">
+          <img class="reveal" src="assets/piscina-casa-palmas.jpg" alt="Casa y piscina">
         </div>
-      </article>
-      <article class="feature-card">
-        <img src="assets/entrada-villa.jpeg" alt="Entrada de la villa">
-        <div>
-          <span>🚪 Bienvenida a la villa</span>
-          <h3>Entrada cálida y elegante</h3>
-          <p>Un acceso que conecta la terraza con el interior de la casa.</p>
-        </div>
-      </article>
-      <article class="feature-card">
-        <img src="assets/habitacion-premium.jpeg" alt="Habitación premium en madera">
-        <div>
-          <span>🛏️ Habitación premium</span>
-          <h3>Descanso con ambiente acogedor</h3>
-          <p>Habitaciones cálidas con acabados en madera y estilo de cabaña premium.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="amenities" id="amenidades">
-      <p class="section-label">Amenidades</p>
-      <h2>Todo lo necesario para disfrutar sin salir de la hacienda.</h2>
-      <div class="amenity-list">
-        <div>🏊 Piscina</div>
-        <div>🍖 BBQ & gazebo</div>
-        <div>🍽️ Cocina social</div>
-        <div>🎱 Billar</div>
-        <div>🍸 Bar</div>
-        <div>🌴 Balcón y áreas verdes</div>
-        <div>🎉 Salón de eventos</div>
-        <div>🏡 Villas para hospedaje</div>
       </div>
     </section>
 
-    <section class="event-section" id="eventos">
-      <div class="event-text">
-        <p class="section-label">Eventos & celebraciones</p>
-        <h2>Espacios diseñados para momentos inolvidables.</h2>
-        <p>Ideal para bodas, cumpleaños, reuniones privadas, actividades sociales y encuentros empresariales en un entorno tropical y exclusivo.</p>
-        <a href="#reservar" class="btn primary">Solicitar información</a>
+    <section class="section pool-section">
+      <div class="pool-copy reveal">
+        <p class="eyebrow">Piscinas & exteriores</p>
+        <h2>Ambientes para relajarse, celebrar y disfrutar.</h2>
       </div>
-      <div class="event-images">
-        <img src="assets/salon-eventos.jpeg" alt="Salón de eventos">
-        <img src="assets/bar-billar.jpeg" alt="Bar y área de billar">
+      <div class="pool-grid">
+        <img class="reveal" src="assets/piscina-cascada.jpg" alt="Piscina con cascada">
+        <img class="reveal" src="assets/piscina-elegante.jpg" alt="Piscina elegante">
+        <img class="reveal" src="assets/pergola-privada.jpg" alt="Área privada">
       </div>
     </section>
 
-    <section class="gallery" id="galeria">
-      <p class="section-label">Galería</p>
-      <h2>Conoce los espacios principales</h2>
+    <section class="section gallery-section" id="galeria">
+      <div class="section-head reveal">
+        <p class="eyebrow">Galería</p>
+        <h2>Recorrido visual por la hacienda</h2>
+        <p>Una selección final de los espacios más representativos.</p>
+      </div>
       <div class="gallery-grid">
-        <figure><img src="assets/aerea-premium.jpeg" alt="Vista aérea"><figcaption>Aérea</figcaption></figure>
-        <figure><img src="assets/interior-premium.jpeg" alt="Interior premium"><figcaption>Interior premium</figcaption></figure>
-        <figure><img src="assets/cocina-social.jpeg" alt="Cocina social"><figcaption>Cocina social</figcaption></figure>
-        <figure><img src="assets/sala-calida.jpeg" alt="Sala cálida"><figcaption>Sala cálida</figcaption></figure>
-        <figure><img src="assets/balcon-descanso.jpeg" alt="Balcón y descanso"><figcaption>Balcón & descanso</figcaption></figure>
-        <figure><img src="assets/bbq-gazebo.jpeg" alt="BBQ y gazebo"><figcaption>BBQ & Gazebo</figcaption></figure>
-        <figure><img src="assets/piscina-palmas.jpeg" alt="Piscina y palmas"><figcaption>Piscina & palmas</figcaption></figure>
-        <figure><img src="assets/habitacion-premium.jpeg" alt="Habitación premium"><figcaption>Habitación premium</figcaption></figure>
+        <button class="gallery-card reveal" data-img="assets/hero-piscina.jpg">
+          <img src="assets/hero-piscina.jpg" alt="Piscina principal - Hacienda & Eventos Espinal">
+          <span>Piscina principal</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/hero-noche.jpg">
+          <img src="assets/hero-noche.jpg" alt="Vista nocturna - Hacienda & Eventos Espinal">
+          <span>Vista nocturna</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/piscina-casa-palmas.jpg">
+          <img src="assets/piscina-casa-palmas.jpg" alt="Casa y palmas - Hacienda & Eventos Espinal">
+          <span>Casa y palmas</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/camino-palmeras.jpg">
+          <img src="assets/camino-palmeras.jpg" alt="Camino tropical - Hacienda & Eventos Espinal">
+          <span>Camino tropical</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/bbq-gazebo.jpg">
+          <img src="assets/bbq-gazebo.jpg" alt="BBQ & gazebo - Hacienda & Eventos Espinal">
+          <span>BBQ & gazebo</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/bbq-mecedoras.jpg">
+          <img src="assets/bbq-mecedoras.jpg" alt="Mecedoras - Hacienda & Eventos Espinal">
+          <span>Mecedoras</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/gazebo-lounge.jpg">
+          <img src="assets/gazebo-lounge.jpg" alt="Gazebo lounge - Hacienda & Eventos Espinal">
+          <span>Gazebo lounge</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/cocina-isla.jpg">
+          <img src="assets/cocina-isla.jpg" alt="Cocina premium - Hacienda & Eventos Espinal">
+          <span>Cocina premium</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/salon-reflejos.jpg">
+          <img src="assets/salon-reflejos.jpg" alt="Salón de eventos - Hacienda & Eventos Espinal">
+          <span>Salón de eventos</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/pista-eventos.jpg">
+          <img src="assets/pista-eventos.jpg" alt="Pista - Hacienda & Eventos Espinal">
+          <span>Pista</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/billar.jpg">
+          <img src="assets/billar.jpg" alt="Billar - Hacienda & Eventos Espinal">
+          <span>Billar</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/bar-led.jpg">
+          <img src="assets/bar-led.jpg" alt="Bar - Hacienda & Eventos Espinal">
+          <span>Bar</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/cabana-frente.jpg">
+          <img src="assets/cabana-frente.jpg" alt="Cabaña - Hacienda & Eventos Espinal">
+          <span>Cabaña</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/cabana-balcon.jpg">
+          <img src="assets/cabana-balcon.jpg" alt="Balcón - Hacienda & Eventos Espinal">
+          <span>Balcón</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/piscina-cascada.jpg">
+          <img src="assets/piscina-cascada.jpg" alt="Piscina cascada - Hacienda & Eventos Espinal">
+          <span>Piscina cascada</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/piscina-elegante.jpg">
+          <img src="assets/piscina-elegante.jpg" alt="Piscina privada - Hacienda & Eventos Espinal">
+          <span>Piscina privada</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/pergola-privada.jpg">
+          <img src="assets/pergola-privada.jpg" alt="Pérgola - Hacienda & Eventos Espinal">
+          <span>Pérgola</span>
+        </button>
+<button class="gallery-card reveal" data-img="assets/aerea-amplia.jpg">
+          <img src="assets/aerea-amplia.jpg" alt="Aérea - Hacienda & Eventos Espinal">
+          <span>Aérea</span>
+        </button>
       </div>
     </section>
 
-    <section class="reserve" id="reservar">
-      <p class="section-label">Reservas</p>
-      <h2>Reserva tu experiencia en Hacienda & Eventos Espinal</h2>
-      <p>Consulta disponibilidad para eventos, pasadías, hospedaje y celebraciones privadas.</p>
-      <a class="btn primary" href="https://wa.me/18090000000?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20Hacienda%20%26%20Eventos%20Espinal" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+    <section class="section testimonials" id="testimonios">
+      <div class="section-head reveal">
+        <p class="eyebrow">Testimonios</p>
+        <h2>Comparte tu experiencia</h2>
+        <p>Los testimonios se guardan y aparecen automáticamente en la web.</p>
+      </div>
+
+      <div class="testimonial-layout">
+        <form class="testimonial-form reveal" id="testimonialForm">
+          <label>Nombre
+            <input type="text" id="name" placeholder="Tu nombre" required>
+          </label>
+          <label>Calificación
+            <select id="rating" required>
+              <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+              <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+              <option value="3">⭐⭐⭐ Bueno</option>
+              <option value="2">⭐⭐ Regular</option>
+              <option value="1">⭐ Puede mejorar</option>
+            </select>
+          </label>
+          <label>Tu experiencia
+            <textarea id="message" rows="5" placeholder="Escribe tu testimonio..." required></textarea>
+          </label>
+          <label>Fecha de visita
+            <input type="text" id="visitDate" placeholder="Ej: Mayo 2026">
+          </label>
+          <button class="btn primary" type="submit" id="testimonialBtn">Enviar testimonio</button>
+          <small id="testimonialStatus">Tu testimonio se publicará automáticamente en la página.</small>
+        </form>
+
+        <div class="testimonial-list reveal" id="testimonialList">
+          <div class="empty-testimonial"><span>🌿</span><p>Cargando testimonios...</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-contact" id="contacto">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">Contacto & ubicación</p>
+        <h2>Agenda tu visita o solicita información</h2>
+        <p>Hacienda & Eventos Espinal está disponible para celebraciones, hospedaje, pasadías y experiencias privadas.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="tel:8298125815">Llamar: 829-812-5815</a>
+          <a class="btn secondary dark-text" href="https://www.instagram.com/espinalhaciendaeventos" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="map-buttons">
+          <a href="https://maps.app.goo.gl/rhF5es9eyvoyRM3s9?g_st=ic" target="_blank" rel="noopener">📍 Google Maps</a>
+          <a href="https://waze.com/ul/hd7myd19dq" target="_blank" rel="noopener">🚗 Waze</a>
+          <a href="https://maps.apple/p/zpAZgRyDVoIC9p" target="_blank" rel="noopener">🍎 Apple Maps</a>
+        </div>
+      </div>
     </section>
   </main>
 
+  <button class="float-top" id="topBtn" aria-label="Subir">↑</button>
+
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox" aria-label="Cerrar">×</button>
+    <img id="lightboxImg" alt="Foto ampliada Hacienda Espinal">
+  </div>
+
   <footer>
-    <p>© Hacienda & Eventos Espinal. Todos los derechos reservados.</p>
+    <p>© <span id="year"></span> Hacienda & Eventos Espinal</p>
+    <p>Elegancia, naturaleza y experiencias inolvidables.</p>
   </footer>
 
   <script src="script.js"></script>
