@@ -92,3 +92,5 @@ nav{display:flex;align-items:center;gap:22px;font-size:.9rem;font-weight:600}.na
   .alojamiento-grid{grid-template-columns:1fr}
   .alojamiento-card,.alojamiento-card.large{grid-column:span 1;min-height:310px}
 }
+
+.hero-logo{transform:scale(.88)!important;}
